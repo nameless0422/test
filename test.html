@@ -262,5 +262,68 @@
     <footeer>
         <address>서울특별시 강서구 내발산동</address>
     </footeer>
+    <hr/>
+    <h1>CSS3 Selector Basic</h1>
+    <style>
+    h2{
+        color: red;
+        background-color: orange;
+    }
+    #header{
+            width: 800px; margin: 0 auto; background: red;
+        }
+    #wrap{
+        width: 800px; margin: 0 auto; overflow: hidden;
+    }
+    #aside{
+        width: 200px; float: left; background: blue;
+    }
+    #content{
+        width: 600px; float: left; background: green;
+    }
+    .select{color:red;}
+    .header{background-color: blue;}
+    input[type=text]{background: red;}
+    input[type=password]{background: blue;}
+    #header h1{color:greenyellow;}
+    #section h1{color:orange;}
+    </style>
+    <h2>CSS3 Selector Basic</h2>
+    <hr/>
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>Aside</h1>
+        </div>
+        <div id="content">
+            <h1>Content</h1>
+        </div>
+    </div>
+    <ul>
+        <li class="select">Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li class="select">Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+    </ul>
+    <hr/>
+    <h1 class="select header">Lorem ipsum</h1>
+    <hr/>
+    <form>
+        <input type="text"/>
+        <input type="password"/>
+    </form>
+    <hr/>
+    <div id="header">
+        <h1 class="title">Lorem ipsum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
 </body>
 </html>
