@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        /*h1 태그 바로 뒤에 위치하는 h2 태그의 color 속성에 red 키워드를 적용합니다.*/
+        h1 + h2{color:red;}
+        /*h1 태그 뒤에 위치하는 h2 태그의 background-color 속성에 orenge 키워드를 적용합니다.*/
+        h1~h2{background-color: orange;}
+        /*h1 태그에 마우스를 올릴 경우에 color 속성에 red 키워드를 적용합니다.*/
+        h1:hover{color:red;}
+        /*h1 태그를 마우스로 클릭할때 color 속성에 blue 키워드를 적용합니다.*/
+        h1:active{color:blue;}
+        /*input 태그가 사용 가능할 경우에 background-color 속성에 while 키워드를 적용합니다.*/
+        input:enabled{background-color: white;}
+        /*input 태그가 사용 불가능할 경우에 background-color 속성에 gray 키워드를 적용합니다.*/
+        input:disabled{background-color: gray;}
+        /*input 태그에 초점이 맞춰진 경우에 background-color 속성에 orange 키워드를 적용합니다.*/
+        input:focus{background-color: orange;}
+        /*input 태그의 type 속성값이 checkbox인 태그가 체크되었을 때 바로 뒤에 위치하는 div 태그의 heigth 속성에 0픽셀을 적용합니다.*/
+        input[type=checkbox]:checked+div{
+            height: 0px;
+        }
+        div {
+            overflow: hidden;
+            width: 650px; height: 300px;
+
+            /*변환 효과를 적용합니다.*/
+            -ms-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Header - 1</h1>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <hr/>
+    <h2>Enabled</h2>
+    <input/>
+    <h2>Disabled</h2>
+    <input disabled="disabled"/>
+    <hr/>
+    <input type="checkbox"/>
+    <div>
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</body>
+</html>
