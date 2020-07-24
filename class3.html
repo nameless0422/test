@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selection Basic</title>
+    <style>
+        a {text-decoration: none;}
+        a:visited {color:red}
+
+        a:link::after{content: ' - ' attr(href);}
+
+        input:not([type=password]){background: red;}
+    </style>
+</head>
+<body>
+    <h1><a>Nothing</a></h1>
+    <h1><a href="https://naver.com">Naver</a></h1>
+    <h1><a href="https://github.com">Github</a></h1>
+    <hr/>
+    <input type="password"/>
+    <input type="text"/>
+    <input type="password"/>
+    <input type="text"/>
+</body>
+</html>
