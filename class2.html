@@ -14,6 +14,13 @@
 
         li:nth-child(2n){background-color: #FF0003;}
         li:nth-child(2n+1){background-color: #800000;}
+
+        p{counter-increment: rint;}
+        p::selection{background: black; color: white;}
+        p::before{content: counter(rint) ".";}
+        p::after{content: " - " attr(data-page) " page ";}
+        p::first-letter{font-size: 3em;}
+        p::first-line{color:red;}
     </style>
 </head>
 <body>
@@ -26,5 +33,13 @@
         <li>Sixth</li>
         <li>Seventh</li>
     </ul>
+    <hr/>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>행복회로에다가 후라이 굽고 있었는데 안나오더라.</p>
+    <hr/>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p data-page="52">아무노래나 일단틀어 아무거나 신나는걸로</p>
+    <p data-page="273">우우 차라리 비나 내렸으면 좋겠다~</p>
 </body>
 </html>
