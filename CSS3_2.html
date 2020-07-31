@@ -4,15 +4,22 @@
     <title>CSS3 Property Basic</title>
     <style>
         div{
+            margin: 10px; padding: 10px;
             width: 100px; height: 100px;
-            background-color: red;
-
-            border: 20px solid black;
-            margin: 10px; padding: 30px;
+            border: 10px solid black;
+        }
+        div:first-child{
+            background: red;
+            box-sizing: content-box;
+        }
+        div:last-child{
+            background: orange;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
-    <div><p>어쩌고 저쩌고 와라나라라라라라ㅏ라라라ㅏ라라라ㅏ럼ㄴ라ㅣㅓ낼냐ㅐㅓ라ㅣㅈㅁ러나ㅣ러니ㅏ러ㅏㅣㄴ머리ㅏㄴ머라ㅣㅓ마ㅣㅓㅏㅣ코딩귀찮아</p></div>
+    <div></div>
+    <div></div>
 </body>
 </html>
